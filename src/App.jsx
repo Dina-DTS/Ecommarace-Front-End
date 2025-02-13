@@ -15,8 +15,7 @@ import Cart from './Components/Cart/Cart'
 import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute'
 import ProtectedAuth from './Components/ProtectedAuth/ProtectedAuth'
 import ProductDetails from './Components/ProductDetails/ProductDetails'
-import toast, { Toaster } from 'react-hot-toast'
-import AllOrders from './Components/allOrders/allOrders'
+import { Toaster } from 'react-hot-toast'
 import Wishlist from './Components/wishlist/wishlist'
 import ForgetPassword from './Components/User/ForgetPassword'
 import RestPassword from './Components/User/RestPassword'
@@ -37,7 +36,6 @@ function App() {
       {path:"*",element:<Notfound/>},
       {path:"login",element:<ProtectedAuth><Login/></ProtectedAuth>},
       {path:"register",element:<ProtectedAuth><Register/></ProtectedAuth>},
-      {path:"allorders",element:<ProtectedAuth><AllOrders/></ProtectedAuth>},
       {path:"forgetpass",element:<ProtectedAuth><ForgetPassword/></ProtectedAuth>},
       {path:"restpass",element:<ProtectedAuth><RestPassword/></ProtectedAuth>},
       {path:"codeverify",element:<ProtectedAuth><CodeVerfiy/></ProtectedAuth>},
