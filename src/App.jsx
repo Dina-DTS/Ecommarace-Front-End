@@ -20,6 +20,7 @@ import Wishlist from './Components/wishlist/wishlist'
 import ForgetPassword from './Components/User/ForgetPassword'
 import RestPassword from './Components/User/RestPassword'
 import CodeVerfiy from './Components/User/CodeVerfiy'
+import Allorders from './Components/allorders/allorders'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -39,6 +40,7 @@ function App() {
       {path:"forgetpass",element:<ProtectedAuth><ForgetPassword/></ProtectedAuth>},
       {path:"restpass",element:<ProtectedAuth><RestPassword/></ProtectedAuth>},
       {path:"codeverify",element:<ProtectedAuth><CodeVerfiy/></ProtectedAuth>},
+      {path:"allorders",element:<ProtectedAuth><Allorders/></ProtectedAuth>},
     ]}
   ])
 
