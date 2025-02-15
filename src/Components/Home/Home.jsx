@@ -9,7 +9,6 @@ export default function Home() {
     const { products, isLoading } = useGetProducts();
     const [searchQuery, setSearchQuery] = useState('');
 
-    console.log("Fetched Products:", products); // Debugging
 
     // Ensure products are always an array
     const filteredProducts = (products ?? []).filter((p) =>
